@@ -1,0 +1,455 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		AFA4BD7D17F7BC9D000A316A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = AFA4BD6C17F7BC9D000A316A /* AppDelegate.m */; };
+		AFA4BD7E17F7BC9D000A316A /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = AFA4BD6D17F7BC9D000A316A /* Default-568h@2x.png */; };
+		AFA4BD7F17F7BC9D000A316A /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = AFA4BD6E17F7BC9D000A316A /* Default.png */; };
+		AFA4BD8017F7BC9D000A316A /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = AFA4BD6F17F7BC9D000A316A /* Default@2x.png */; };
+		AFA4BD8217F7BC9D000A316A /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = AFA4BD7217F7BC9D000A316A /* InfoPlist.strings */; };
+		AFA4BD8317F7BC9D000A316A /* ViewController_iPad.xib in Resources */ = {isa = PBXBuildFile; fileRef = AFA4BD7417F7BC9D000A316A /* ViewController_iPad.xib */; };
+		AFA4BD8417F7BC9D000A316A /* ViewController_iPhone.xib in Resources */ = {isa = PBXBuildFile; fileRef = AFA4BD7617F7BC9D000A316A /* ViewController_iPhone.xib */; };
+		AFA4BD8517F7BC9D000A316A /* KeychainItemWrapper.m in Sources */ = {isa = PBXBuildFile; fileRef = AFA4BD7917F7BC9D000A316A /* KeychainItemWrapper.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		AFA4BD8617F7BC9D000A316A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = AFA4BD7A17F7BC9D000A316A /* main.m */; };
+		AFA4BD8717F7BC9D000A316A /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AFA4BD7C17F7BC9D000A316A /* ViewController.m */; };
+		AFC4119C17F7BC0400F4EB8C /* libBoxSDK.a in Frameworks */ = {isa = PBXBuildFile; fileRef = AFC4119117F7BBF000F4EB8C /* libBoxSDK.a */; };
+		AFC4119D17F7BC1600F4EB8C /* BoxSDKResources.bundle in Resources */ = {isa = PBXBuildFile; fileRef = AFC4119517F7BBF000F4EB8C /* BoxSDKResources.bundle */; };
+		C5152CD417540D88007A5C0A /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C5152CD317540D88007A5C0A /* Security.framework */; };
+		C52C101C1753FB0900B4303F /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C52C101B1753FB0900B4303F /* UIKit.framework */; };
+		C52C101E1753FB0900B4303F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C52C101D1753FB0900B4303F /* Foundation.framework */; };
+		C52C10201753FB0900B4303F /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C52C101F1753FB0900B4303F /* CoreGraphics.framework */; };
+		C54BBF761758551400F5DAD8 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C54BBF751758551400F5DAD8 /* QuartzCore.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		AFA4BD8F17F7C104000A316A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = AFC4118817F7BBEF00F4EB8C /* BoxSDK.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = E4081D8C1758728900F6D6AA;
+			remoteInfo = BoxSDKResources;
+		};
+		AFC4119017F7BBF000F4EB8C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = AFC4118817F7BBEF00F4EB8C /* BoxSDK.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = E470433B16D41DC500FED29A;
+			remoteInfo = BoxSDK;
+		};
+		AFC4119217F7BBF000F4EB8C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = AFC4118817F7BBEF00F4EB8C /* BoxSDK.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = E470434C16D41DC500FED29A;
+			remoteInfo = BoxSDKTests;
+		};
+		AFC4119417F7BBF000F4EB8C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = AFC4118817F7BBEF00F4EB8C /* BoxSDK.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = E4081D8D1758728900F6D6AA;
+			remoteInfo = BoxSDKResources;
+		};
+		AFC4119617F7BBF000F4EB8C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = AFC4118817F7BBEF00F4EB8C /* BoxSDK.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = F0E5E2E717A78AEF00153646;
+			remoteInfo = BoxCocoaSDK;
+		};
+		AFC4119817F7BBF000F4EB8C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = AFC4118817F7BBEF00F4EB8C /* BoxSDK.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = F0E5E2FD17A78AEF00153646;
+			remoteInfo = BoxCocoaSDKTests;
+		};
+		AFC4119A17F7BBFC00F4EB8C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = AFC4118817F7BBEF00F4EB8C /* BoxSDK.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = E470433A16D41DC500FED29A;
+			remoteInfo = BoxSDK;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		AFA4BD6B17F7BC9D000A316A /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		AFA4BD6C17F7BC9D000A316A /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		AFA4BD6D17F7BC9D000A316A /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		AFA4BD6E17F7BC9D000A316A /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
+		AFA4BD6F17F7BC9D000A316A /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
+		AFA4BD7017F7BC9D000A316A /* DownloadTortureTest-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "DownloadTortureTest-Info.plist"; sourceTree = "<group>"; };
+		AFA4BD7117F7BC9D000A316A /* DownloadTortureTest-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "DownloadTortureTest-Prefix.pch"; sourceTree = "<group>"; };
+		AFA4BD7317F7BC9D000A316A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		AFA4BD7517F7BC9D000A316A /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/ViewController_iPad.xib; sourceTree = "<group>"; };
+		AFA4BD7717F7BC9D000A316A /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/ViewController_iPhone.xib; sourceTree = "<group>"; };
+		AFA4BD7817F7BC9D000A316A /* KeychainItemWrapper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KeychainItemWrapper.h; sourceTree = "<group>"; };
+		AFA4BD7917F7BC9D000A316A /* KeychainItemWrapper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KeychainItemWrapper.m; sourceTree = "<group>"; };
+		AFA4BD7A17F7BC9D000A316A /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		AFA4BD7B17F7BC9D000A316A /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		AFA4BD7C17F7BC9D000A316A /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		AFC4118817F7BBEF00F4EB8C /* BoxSDK.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = BoxSDK.xcodeproj; path = "vendor/box-ios-sdk-v2/BoxSDK.xcodeproj"; sourceTree = "<group>"; };
+		C5152CD317540D88007A5C0A /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		C52C10171753FB0900B4303F /* DownloadTortureTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DownloadTortureTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		C52C101B1753FB0900B4303F /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		C52C101D1753FB0900B4303F /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		C52C101F1753FB0900B4303F /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		C54BBF751758551400F5DAD8 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		C52C10141753FB0900B4303F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AFC4119C17F7BC0400F4EB8C /* libBoxSDK.a in Frameworks */,
+				C54BBF761758551400F5DAD8 /* QuartzCore.framework in Frameworks */,
+				C5152CD417540D88007A5C0A /* Security.framework in Frameworks */,
+				C52C101C1753FB0900B4303F /* UIKit.framework in Frameworks */,
+				C52C101E1753FB0900B4303F /* Foundation.framework in Frameworks */,
+				C52C10201753FB0900B4303F /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		AFA4BD6A17F7BC9D000A316A /* DownloadTortureTest */ = {
+			isa = PBXGroup;
+			children = (
+				AFA4BD6B17F7BC9D000A316A /* AppDelegate.h */,
+				AFA4BD6C17F7BC9D000A316A /* AppDelegate.m */,
+				AFA4BD6D17F7BC9D000A316A /* Default-568h@2x.png */,
+				AFA4BD6E17F7BC9D000A316A /* Default.png */,
+				AFA4BD6F17F7BC9D000A316A /* Default@2x.png */,
+				AFA4BD7017F7BC9D000A316A /* DownloadTortureTest-Info.plist */,
+				AFA4BD7117F7BC9D000A316A /* DownloadTortureTest-Prefix.pch */,
+				AFA4BD7217F7BC9D000A316A /* InfoPlist.strings */,
+				AFA4BD7417F7BC9D000A316A /* ViewController_iPad.xib */,
+				AFA4BD7617F7BC9D000A316A /* ViewController_iPhone.xib */,
+				AFA4BD7817F7BC9D000A316A /* KeychainItemWrapper.h */,
+				AFA4BD7917F7BC9D000A316A /* KeychainItemWrapper.m */,
+				AFA4BD7A17F7BC9D000A316A /* main.m */,
+				AFA4BD7B17F7BC9D000A316A /* ViewController.h */,
+				AFA4BD7C17F7BC9D000A316A /* ViewController.m */,
+			);
+			path = DownloadTortureTest;
+			sourceTree = "<group>";
+		};
+		AFC4118917F7BBEF00F4EB8C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				AFC4119117F7BBF000F4EB8C /* libBoxSDK.a */,
+				AFC4119317F7BBF000F4EB8C /* BoxSDKTests.octest */,
+				AFC4119517F7BBF000F4EB8C /* BoxSDKResources.bundle */,
+				AFC4119717F7BBF000F4EB8C /* BoxCocoaSDK.framework */,
+				AFC4119917F7BBF000F4EB8C /* BoxCocoaSDKTests.octest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C52C100C1753FB0900B4303F = {
+			isa = PBXGroup;
+			children = (
+				AFC4118817F7BBEF00F4EB8C /* BoxSDK.xcodeproj */,
+				AFA4BD6A17F7BC9D000A316A /* DownloadTortureTest */,
+				C52C101A1753FB0900B4303F /* Frameworks */,
+				C52C10181753FB0900B4303F /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		C52C10181753FB0900B4303F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C52C10171753FB0900B4303F /* DownloadTortureTest.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C52C101A1753FB0900B4303F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C54BBF751758551400F5DAD8 /* QuartzCore.framework */,
+				C5152CD317540D88007A5C0A /* Security.framework */,
+				C52C101B1753FB0900B4303F /* UIKit.framework */,
+				C52C101D1753FB0900B4303F /* Foundation.framework */,
+				C52C101F1753FB0900B4303F /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		C52C10161753FB0900B4303F /* DownloadTortureTest */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C52C103E1753FB0900B4303F /* Build configuration list for PBXNativeTarget "DownloadTortureTest" */;
+			buildPhases = (
+				C52C10131753FB0900B4303F /* Sources */,
+				C52C10141753FB0900B4303F /* Frameworks */,
+				C52C10151753FB0900B4303F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				AFA4BD9017F7C104000A316A /* PBXTargetDependency */,
+				AFC4119B17F7BBFC00F4EB8C /* PBXTargetDependency */,
+			);
+			name = DownloadTortureTest;
+			productName = DownloadTortureTest;
+			productReference = C52C10171753FB0900B4303F /* DownloadTortureTest.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		C52C100E1753FB0900B4303F /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0450;
+				ORGANIZATIONNAME = "Box, Inc.";
+			};
+			buildConfigurationList = C52C10111753FB0900B4303F /* Build configuration list for PBXProject "DownloadTortureTest" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = C52C100C1753FB0900B4303F;
+			productRefGroup = C52C10181753FB0900B4303F /* Products */;
+			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = AFC4118917F7BBEF00F4EB8C /* Products */;
+					ProjectRef = AFC4118817F7BBEF00F4EB8C /* BoxSDK.xcodeproj */;
+				},
+			);
+			projectRoot = "";
+			targets = (
+				C52C10161753FB0900B4303F /* DownloadTortureTest */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		AFC4119117F7BBF000F4EB8C /* libBoxSDK.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libBoxSDK.a;
+			remoteRef = AFC4119017F7BBF000F4EB8C /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		AFC4119317F7BBF000F4EB8C /* BoxSDKTests.octest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = BoxSDKTests.octest;
+			remoteRef = AFC4119217F7BBF000F4EB8C /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		AFC4119517F7BBF000F4EB8C /* BoxSDKResources.bundle */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = BoxSDKResources.bundle;
+			remoteRef = AFC4119417F7BBF000F4EB8C /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		AFC4119717F7BBF000F4EB8C /* BoxCocoaSDK.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = BoxCocoaSDK.framework;
+			remoteRef = AFC4119617F7BBF000F4EB8C /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		AFC4119917F7BBF000F4EB8C /* BoxCocoaSDKTests.octest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = BoxCocoaSDKTests.octest;
+			remoteRef = AFC4119817F7BBF000F4EB8C /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
+
+/* Begin PBXResourcesBuildPhase section */
+		C52C10151753FB0900B4303F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AFA4BD8217F7BC9D000A316A /* InfoPlist.strings in Resources */,
+				AFA4BD8017F7BC9D000A316A /* Default@2x.png in Resources */,
+				AFA4BD8417F7BC9D000A316A /* ViewController_iPhone.xib in Resources */,
+				AFA4BD8317F7BC9D000A316A /* ViewController_iPad.xib in Resources */,
+				AFC4119D17F7BC1600F4EB8C /* BoxSDKResources.bundle in Resources */,
+				AFA4BD7F17F7BC9D000A316A /* Default.png in Resources */,
+				AFA4BD7E17F7BC9D000A316A /* Default-568h@2x.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		C52C10131753FB0900B4303F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AFA4BD8517F7BC9D000A316A /* KeychainItemWrapper.m in Sources */,
+				AFA4BD8617F7BC9D000A316A /* main.m in Sources */,
+				AFA4BD8717F7BC9D000A316A /* ViewController.m in Sources */,
+				AFA4BD7D17F7BC9D000A316A /* AppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		AFA4BD9017F7C104000A316A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = BoxSDKResources;
+			targetProxy = AFA4BD8F17F7C104000A316A /* PBXContainerItemProxy */;
+		};
+		AFC4119B17F7BBFC00F4EB8C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = BoxSDK;
+			targetProxy = AFC4119A17F7BBFC00F4EB8C /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		AFA4BD7217F7BC9D000A316A /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				AFA4BD7317F7BC9D000A316A /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		AFA4BD7417F7BC9D000A316A /* ViewController_iPad.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				AFA4BD7517F7BC9D000A316A /* en */,
+			);
+			name = ViewController_iPad.xib;
+			sourceTree = "<group>";
+		};
+		AFA4BD7617F7BC9D000A316A /* ViewController_iPhone.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				AFA4BD7717F7BC9D000A316A /* en */,
+			);
+			name = ViewController_iPhone.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		C52C103C1753FB0900B4303F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		C52C103D1753FB0900B4303F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		C52C103F1753FB0900B4303F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "DownloadTortureTest/DownloadTortureTest-Prefix.pch";
+				HEADER_SEARCH_PATHS = "$(BUILT_PRODUCTS_DIR)";
+				INFOPLIST_FILE = "DownloadTortureTest/DownloadTortureTest-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = DownloadTortureTest;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		C52C10401753FB0900B4303F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "DownloadTortureTest/DownloadTortureTest-Prefix.pch";
+				HEADER_SEARCH_PATHS = "$(BUILT_PRODUCTS_DIR)";
+				INFOPLIST_FILE = "DownloadTortureTest/DownloadTortureTest-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = DownloadTortureTest;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C52C10111753FB0900B4303F /* Build configuration list for PBXProject "DownloadTortureTest" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C52C103C1753FB0900B4303F /* Debug */,
+				C52C103D1753FB0900B4303F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C52C103E1753FB0900B4303F /* Build configuration list for PBXNativeTarget "DownloadTortureTest" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C52C103F1753FB0900B4303F /* Debug */,
+				C52C10401753FB0900B4303F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = C52C100E1753FB0900B4303F /* Project object */;
+}
