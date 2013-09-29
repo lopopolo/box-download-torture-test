@@ -11,7 +11,7 @@ All other errors will result in the operation chain exiting.
 
 This app simulates a pathological scenario to test for resource leaks.
 
-![Memory profile in XCode 5](https://raw.github.com/lopopolo/download-torture-test/mem-profile.png)
+![Memory profile in XCode 5](https://raw.github.com/lopopolo/box-download-torture-test/master/mem-profile.png)
 
 Memory usage is pretty constant over a 15 minute test.
 
