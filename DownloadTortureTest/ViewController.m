@@ -32,6 +32,9 @@
 
 @property (nonatomic, readwrite, strong) BoxFolderPickerViewController *folderPicker;
 
+@property (nonatomic, readwrite, assign) NSUInteger completedDownloads;
+@property (atomic, readwrite, strong) NSDate *downloadTestStart;
+
 - (void)presentBoxFolderPicker;
 - (void)boxError:(NSError*)error;
 
@@ -43,6 +46,11 @@
  * @param file The file to download.
  */
 - (void)initiateDownloadForCopy:(NSUInteger)copy file:(BoxFile *)file;
+
+/**
+ * Update download statistics and refresh UI.
+ */
+- (void)logCompletedDownload;
 
 @end
 
@@ -135,12 +143,36 @@
 
         BOXAssert([item.type isEqualToString:BoxAPIItemTypeFile], @"Folder picker should only allow file selection");
         BoxFile *file = (BoxFile *)item;
+
+        self.completedDownloads = 0;
+        self.downloadTestStart = [NSDate dateWithTimeIntervalSinceNow:0];
+
+        dispatch_async(dispatch_get_main_queue(), ^{
+            self.downloadsPerSecondDescriptionLabel.hidden = NO;
+            self.downloadsPerSecondLabel.hidden = NO;
+            self.totalDownloadsDescriptionLabel.hidden = NO;
+            self.totalDownloadsLabel.hidden = NO;
+        });
+
         for (NSUInteger i=0; i < TORTURE_TEST_SIMULTANEOUS_DOWNLOAD_OPERATIONS; ++i)
         {
             [self initiateDownloadForCopy:i file:file];
         }
     }];
     
+}
+
+- (void)logCompletedDownload
+{
+    dispatch_async(dispatch_get_main_queue(), ^{
+        @synchronized(self) {
+            self.completedDownloads += 1;
+            self.totalDownloadsLabel.text = [NSString stringWithFormat:@"%d", self.completedDownloads];
+            NSTimeInterval elapsedTime = abs([self.downloadTestStart timeIntervalSinceNow]);
+            self.downloadsPerSecondLabel.text = [NSString stringWithFormat:@"%.3f", (float) self.completedDownloads / elapsedTime];
+        }
+    });
+
 }
 
 - (void)initiateDownloadForCopy:(NSUInteger)copy file:(BoxFile *)file
@@ -154,6 +186,7 @@
     {
         BOXLog(@"Successfully downloaded file for copy %d", copy);
         BOXLog(@"Re-enqueueing download for copy %d", copy);
+        [self logCompletedDownload];
         [self initiateDownloadForCopy:copy file:file];
     };
 
