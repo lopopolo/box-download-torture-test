@@ -16,6 +16,8 @@
 // simultaneous downloads
 #define TORTURE_TEST_SIMULTANEOUS_DOWNLOAD_OPERATIONS     (100U)
 
+#define TORTURE_TEST_DOWNLOAD_PREFIX                      (@"torture-test-downloads")
+
 @interface BoxFolderPickerNavigationController (DownloadTortureTest)
 @end
 
@@ -132,6 +134,16 @@
 - (IBAction)purgeAction:(id)sender
 {
     [self.folderPicker purgeCache];
+
+    // purge downloads
+    NSArray *documentPaths = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES);
+    NSString *cachePath = [documentPaths objectAtIndex:0];
+    NSString *path = cachePath;
+    path = [path stringByAppendingPathComponent:TORTURE_TEST_DOWNLOAD_PREFIX];
+    if ([[NSFileManager defaultManager] fileExistsAtPath:path])
+    {
+        [[NSFileManager defaultManager] removeItemAtPath:path error:nil];
+    }
 }
 
 
@@ -179,7 +191,11 @@
 {
     NSArray *documentPaths = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES);
     NSString *cachePath = [documentPaths objectAtIndex:0];
-    NSString *path = [[cachePath stringByAppendingPathComponent:file.modelID] stringByAppendingPathComponent:[NSString stringWithFormat:@"%d",copy]];
+    NSString *path = cachePath;
+    path = [path stringByAppendingPathComponent:TORTURE_TEST_DOWNLOAD_PREFIX];
+    path = [path stringByAppendingPathComponent:file.modelID];
+    path = [path stringByAppendingPathComponent:[NSString stringWithFormat:@"%d",copy]];
+
     NSOutputStream *outputStream = [NSOutputStream outputStreamToFileAtPath:path append:NO];
 
     BoxDownloadSuccessBlock successBlock = ^(NSString *downloadedFileID, long long expectedContentLength)
